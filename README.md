@@ -1,8 +1,7 @@
 # Deploy a simple mysql pod on kubernetes with persistent volumes
 
-# run create-mysql-pv-deploy.sh or run below instructions: 
 
-# [a link](https://github.com/user/repo/blob/branch/other_file.md)
+# [run create-mysql-pv-deploy.sh](https://github.com/fharris/mysql-kubernetes/blob/main/create-mysql-pv-deploy.sh) or follow below instructions
 
 kubectl create ns mysql
 
