@@ -2,6 +2,8 @@
 
 # run create-mysql-pv-deploy.sh or run below instructions: 
 
+# [a link](https://github.com/user/repo/blob/branch/other_file.md)
+
 kubectl create ns mysql
 
 kubectl -n mysql create secret generic mysql-db-secret --from-literal=pword=mySQLpword#2023
