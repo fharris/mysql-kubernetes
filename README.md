@@ -14,7 +14,7 @@ deploy a simple mysql pod on kubernetes with persistent volumes
 
 6. kubectl -n mysql expose deployment mysql-db-deployment --port=80 --target-port=3306
 
-7. echo "CREATE DATABASE TESTING_PV;" > temp.sql ; kubectl -n mysql exec -it '\`kubectl -n mysql get --no-headers=true pods -l app=mysql-db -o custom-columns=:metadata.name` -- mysql -h 127.0.0.1 -u root -pmySQLpword#2023 < temp.sql ; rm temp.sql;
+7. echo "CREATE DATABASE TESTING_PV;" > temp.sql ; kubectl -n mysql exec -it `kubectl -n mysql get --no-headers=true pods -l app=mysql-db -o custom-columns=:metadata.name` -- mysql -h 127.0.0.1 -u root -pmySQLpword#2023 < temp.sql ; rm temp.sql;
 
 8. echo "SHOW DATABASES;" > temp.sql ; kubectl -n mysql exec -it `kubectl -n mysql get --no-headers=true pods -l app=mysql-db -o custom-columns=:metadata.name` -- mysql -h 127.0.0.1 -u root -pmySQLpword#2023 < temp.sql ; rm temp.sql;
 
