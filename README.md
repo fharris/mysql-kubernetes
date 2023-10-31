@@ -1,4 +1,4 @@
-#Deploy a simple mysql pod on kubernetes with persistent volumes
+# Deploy a simple mysql pod on kubernetes with persistent volumes
 
 kubectl create ns mysql
 
@@ -25,5 +25,5 @@ kubectl -n mysql delete pod `kubectl -n mysql get --no-headers=true pods -l app=
 
 echo "SHOW DATABASES;" > temp.sql ; kubectl -n mysql exec -it `kubectl -n mysql get --no-headers=true pods -l app=mysql-db -o custom-columns=:metadata.name` -- mysql -h 127.0.0.1 -u root -pmySQLpword#2023 < temp.sql | grep -in "TESTING_PV" ; rm temp.sql;
 
-##Database TESTING_PV shoud still exist after deleting the pod.
+# Database TESTING_PV shoud still exist after deleting the pod.
 
