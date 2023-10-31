@@ -1,5 +1,7 @@
 # Deploy a simple mysql pod on kubernetes with persistent volumes
 
+# run create-mysql-pv-deploy.sh or run below instructions: 
+
 kubectl create ns mysql
 
 kubectl -n mysql create secret generic mysql-db-secret --from-literal=pword=mySQLpword#2023
