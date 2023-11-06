@@ -1,3 +1,5 @@
+
+
 ## 1. Deploy a simple mysql pod on kubernetes with persistent volumes based on local host
 
 
@@ -14,4 +16,12 @@ Please run [create-mysql-pv-deploy-blockvol.sh](https://github.com/fharris/mysql
 
 ```
 ./create-mysql-pv-deploy-blockvol.sh
+```
+
+## . To clean
+
+Please run [clean.sh](https://github.com/fharris/mysql-kubernetes/blob/main/clean.sh) or follow below instructions
+
+```
+./clean.sh
 ```
