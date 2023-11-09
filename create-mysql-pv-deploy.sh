@@ -6,7 +6,7 @@ kubectl -n mysql create secret generic mysql-db-secret --from-literal=pword=mySQ
 
 kubectl apply -f mysql-kubernetes/persistentvolume.yaml
 
-kubectl -n mysql apply -f mysql-kubernetes/persistentvolumeclaim.yaml
+kubectl -n mysql apply -f mysql-kubernetes/persistentvolumeclaim-bv.yaml
 
 kubectl -n mysql apply -f mysql-kubernetes/mysql-persistent-deploy.yaml
 
